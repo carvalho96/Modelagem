@@ -1,6 +1,6 @@
-import Pessoa
+from Pessoa import pessoa
 
-class Candidato(Pessoa):
+class Candidato(pessoa):
         def __init__(self, nome, cpf, numero, pathPhoto, Apelido, Cargo):
             super(Candidato , self).__init__(nome, cpf)
             self.numero = numero

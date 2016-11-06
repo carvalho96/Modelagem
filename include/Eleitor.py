@@ -1,6 +1,6 @@
-import Pessoa
+from Pessoa import pessoa
 
-class Eleitor(Pessoa):
+class Eleitor(pessoa):
         def __init__(self, nome, cpf):
             super(Candidato , self).__init__(nome, cpf)
             voto = 0
