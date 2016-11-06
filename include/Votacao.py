@@ -2,12 +2,12 @@ import Candidato
 import Eleitor
 
 class Votacao:
-    def __init__():
-        candidatos = []
-        eleitores = []
-        horaInit = "SEI-LA"
+    def __init__(self):
+        self.candidatos = []
+        self.eleitores = []
+        self.horaInit = "SEI-LA"
     def setHt(ht):
-        horaTermino = ht
+        self.horaTermino = ht
     def getHt():
         return self.horaTermino
     def UEvGet():
@@ -16,11 +16,16 @@ class Votacao:
     def enviaResultados():
         print "La"
         #IMPLEMENTE AQUI JOVEM BRENNO
-    def confirma():
-        print "La"
+    def confirma(cargo, numero):
+        for i in (0 , len(self.candidatos)):
+            if(self.candidatos[i].getCargo == cargo and self.candidatos[i].getNumero == numero):
+                self.candidatos[i].countVotos
+
         #procura e da ++
     def getCandidato(cargo, numero):
-        print "La"
+        for i in (0 , len(self.candidatos)):
+            if(self.candidatos[i].getCargo == cargo and self.candidatos[i].getNumero == numero):
+                return self.candidatos[i]
         #procura candidato, retorna infos
     def sendData():
         print "La"
