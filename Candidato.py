@@ -2,12 +2,12 @@ from Pessoa import pessoa
 
 class Candidato(pessoa):
         def __init__(self, nome, cpf, numero, pathPhoto, Apelido, Cargo):
-            pessoa.__init__(self, nome, cpf)
+            pessoa.__init__(self, nome, "0")
             #super(Candidato, self).__init__(nome, cpf)
             self.numero = numero
             self.quantVotos = 0
             self.pathPhoto = pathPhoto
-            self.apelido = Apelido
+            self.apelido = "0"
             self.cargo = Cargo
 
         def setNumero(self, numero):
