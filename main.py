@@ -12,7 +12,7 @@ Projeto De Modelagem de Sistemas
 '''
 uev = votacao()
 uev.UEvGet()
-while ('19:44' != time.strftime("%H:%M")):
+while ('20:24' != time.strftime("%H:%M")):
     time.sleep(5)
 while uev.getHt() > time.strftime("%H:%M"):
     x = str(raw_input("\n\rEscreva CPF: "))
@@ -83,4 +83,4 @@ while uev.getHt() > time.strftime("%H:%M"):
     B2 = Button(gui, text= "Confirma", command = callbackConf).grid(row= 3, column = 2)
     B2 = Button(gui, text= "Nulo", command = callbackNulo).grid(row= 2, column = 0)
     B2 = Button(gui, text= "Branco", command = callbackBranco).grid(row= 2, column = 1)
-#uev.sendData()
+uev.printaResultados()

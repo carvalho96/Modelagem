@@ -10,7 +10,7 @@ class votacao:
             self.cargoint = 0
             self.cargo = str()
             self.horaInit = "SEI-LA"
-            self.horaTermino = '23:16'
+            self.horaTermino = '20:25'
 
     def setHt(self,ht):
         self.horaTermino = ht
@@ -127,3 +127,40 @@ class votacao:
                     self.eleitores[i].setVoted()
                     return 0
         return 1
+    def printaResultados(self):
+        print "-----------------------RESULTADOS--------------------------"
+        cargo = "vereador"
+        print cargo
+        for i in range(0 , len(self.candidatos)):
+	    if(self.candidatos[i].getCargo() == cargo):
+                print "Nome: ", self.candidatos[i].getNome()
+                print "Votos: ", self.candidatos[i].getCount()
+        print "-----------------------RESULTADOS--------------------------"
+        cargo = "prefeito"
+        print cargo
+        for i in range(0 , len(self.candidatos)):
+	    if(self.candidatos[i].getCargo() == cargo):
+                print "Nome: ", self.candidatos[i].getNome()
+                print "Votos: ", self.candidatos[i].getCount()
+        print "-----------------------RESULTADOS--------------------------"
+        cargo = "presidente"
+        print cargo
+        for i in range(0 , len(self.candidatos)):
+	    if(self.candidatos[i].getCargo() == cargo):
+                print "Nome: ", self.candidatos[i].getNome()
+                print "Votos: ", self.candidatos[i].getCount()
+        print "-----------------------RESULTADOS--------------------------"
+        cargo = "governador"
+        print cargo
+        for i in range(0 , len(self.candidatos)):
+	    if(self.candidatos[i].getCargo() == cargo):
+                print "Nome: ", self.candidatos[i].getNome()
+                print "Votos: ", self.candidatos[i].getCount()
+        print "-----------------------RESULTADOS--------------------------"
+        cargo = "deputado"
+        print cargo
+        for i in range(0 , len(self.candidatos)):
+	    if(self.candidatos[i].getCargo() == cargo):
+                print "Nome: ", self.candidatos[i].getNome()
+                print "Votos: ", self.candidatos[i].getCount()
+        print "-----------------------------------------------------------"
