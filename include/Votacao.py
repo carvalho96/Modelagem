@@ -20,6 +20,8 @@ class Votacao:
         for i in (0 , len(self.candidatos)):
             if(self.candidatos[i].getCargo == cargo and self.candidatos[i].getNumero == numero):
                 self.candidatos[i].countVotos
+            #if(i == len(self.candidatos))
+            #    return None
 
         #procura e da ++
     def getCandidato(cargo, numero):

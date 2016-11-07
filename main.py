@@ -8,21 +8,29 @@ from Tkinter import *
 Projeto De Modelagem de Sistemas
 '''
 gui = Tk()
-
+uev = Votacao()
 Cargo = "~Presidente~"
 ment = StringVar()
+l = ""
+l = 1
+if l is none:
+    print "lalalala"
 
-def callback():
+def callbackVer():
     mtxt = ment.get()
-    labelA = Label(text = mtxt).grid(row= 6, column = 6)
+    candida = uev.getCandidato(Cargo, mtxt)
+    path = candida.getpathImg()
+    nome = candida.getNome()
+    apelido = candida.getApelido()
+    #abelA = Label(text = mtxt).grid(row= 6, column = 6)
 
 gui.geometry('600x600+500+500')
 gui.title("Uev Rio de Janeiro")
 
 xEntry = Entry(gui,textvariable = ment).grid(row= 1, column = 1)
-labelA = Label(text = Cargo).grid(row= 0, column = 1)   
+labelA = Label(text = Cargo).grid(row= 0, column = 1)
 
-B1 = Button(gui, text= "Ver", command = callback).grid(row = 3, column = 2)
+B1 = Button(gui, text= "Ver", command = callbackVer).grid(row = 3, column = 2)
 B2 = Button(gui, text= "Confirma", command = callback).grid(row= 3, column = 2)
 B2 = Button(gui, text= "Nulo", command = callback).grid(row= 2, column = 0)
 B2 = Button(gui, text= "Branco", command = callback).grid(row= 2, column = 1)
