@@ -2,39 +2,40 @@ from Pessoa import pessoa
 
 class Candidato(pessoa):
         def __init__(self, nome, cpf, numero, pathPhoto, Apelido, Cargo):
-            super(Candidato , self).__init__(nome, cpf)
+            pessoa.__init__(self, nome, cpf)
+            #super(Candidato, self).__init__(nome, cpf)
             self.numero = numero
             self.quantVotos = 0
             self.pathPhoto = pathPhoto
             self.apelido = Apelido
             self.cargo = Cargo
 
-        def setNumero(numero):
+        def setNumero(self, numero):
             self.numero = numero
 
-        def getNumero():
+        def getNumero(self):
             return self.numero
 
-        def setpathImg(path):
+        def setpathImg(self, path):
             self.pathPhoto = path
 
-        def getpathImg():
+        def getpathImg(self):
             return self.pathPhoto
 
-        def setApelido(apelido):
+        def setApelido(self, apelido):
             self.apelido = apelido
 
-        def getApelido():
+        def getApelido(self):
             return self.apelido
 
-        def setCargo(cargo):
+        def setCargo(self, cargo):
             self.cargo = cargo
 
-        def getCargo():
+        def getCargo(self):
             return self.cargo
 
-        def countVotos():
+        def countVotos(self):
             self.quantVotos += 1
 
-        def getCount():
+        def getCount(self):
             return self.quantVotos

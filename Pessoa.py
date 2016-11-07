@@ -6,7 +6,7 @@ class pessoa:
             self.cpf = cpf
         def setNome(self, nome):
             self.nome = nomes
-        def getCpf():
+        def getCpf(self):
             return self.cpf
-        def getNome():
+        def getNome(self):
             return self.nome
