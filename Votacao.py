@@ -5,7 +5,10 @@ from Eleitor import Eleitor
 class votacao:
     def __init__(self):
             self.candidatos = list()
+            self.eleitores = list()
+            self.listCargo = []
             self.cargoint = 0
+            self.cargo = str()
             self.horaInit = "SEI-LA"
             self.horaTermino = '23:16'
 
@@ -65,7 +68,6 @@ class votacao:
         b0 = Candidato("NULO","0","NULO","0","0","presidente")
         self.candidatos.append(b0)
 
-        self.eleitores = list()
         a1 = Eleitor("James", "1")
         a2 = Eleitor("Mary", "2")
         a3 = Eleitor("Charlie", "3")
@@ -124,5 +126,4 @@ class votacao:
                 if(self.eleitores[i].getVoted() == 0):
                     self.eleitores[i].setVoted()
                     return 0
-    	self.eleitores[i]
         return 1

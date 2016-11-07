@@ -11,8 +11,8 @@ import time
 Projeto De Modelagem de Sistemas
 '''
 uev = votacao()
-#uev.UEvGet()
-while ('19:04' != time.strftime("%H:%M")):
+uev.UEvGet()
+while ('19:44' != time.strftime("%H:%M")):
     time.sleep(5)
 while uev.getHt() > time.strftime("%H:%M"):
     x = str(raw_input("\n\rEscreva CPF: "))
