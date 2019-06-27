@@ -1,3 +1,3 @@
-# Projeto_De_Modelagem_De_Sistemas_FEI
+# Eletronic ballotbox FEI University Center
 
-Projeto de uma urna eletrônica desenvolvido durante a matéria de modelagem de sistemas no centro universitário da FEI com o objetivo de aprender na prática os metódos de modelagem de um software.
+Electronic ballot box developed during a graduation class at the FEI university center in order to learn and practice software modeling methods.
